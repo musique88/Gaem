@@ -6,8 +6,9 @@ namespace Gaem {
     class Component;
 
     class Entity {
-        std::unordered_map<std::string, Component> components;
+        std::unordered_map<std::string, Component*> components;
     public:
         std::optional<Component*> getComponent(std::string name);
+        void addComponent(std::string name, Component* c);
     };
 }

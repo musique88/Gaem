@@ -6,6 +6,7 @@ namespace Gaem {
     protected:
         Entity* parentEntity;
     public: 
+        void setParent(Entity* p);
         virtual void init();
         virtual void update();
         virtual void draw();

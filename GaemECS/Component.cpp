@@ -18,3 +18,6 @@ void Component::close() {
     
 }
  
+void Component::setParent(Entity* p) {
+    parentEntity = p;
+}
